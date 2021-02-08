@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-// import ProductsList from "../components/ProductsList";
-// import { getProducts } from "../utils/api";
 
 const HomePage = () => {
   return (
@@ -9,7 +7,6 @@ const HomePage = () => {
       <Head>
         <title>Interacpedia RCTVPlay</title>
       </Head>
-      {/* <ProductsList products={products} /> */}
       <div className="video-container relative">
         <video
           src="https://rtvcplay-v2.s3.amazonaws.com/s3fs-public/field/field_video_cover_bg/production/SLIDER%20WEB%20CARNE%20DE%20TU%20CARNE_0.mp4"

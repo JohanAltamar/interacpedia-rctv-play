@@ -83,7 +83,6 @@ export async function getVideos(sectionID) {
       sectionID ? "&filter[field_section.id]=" + sectionID : ""
     }`
   );
-  console.log("hola", videos);
 
   return videos;
 }
@@ -113,7 +112,6 @@ export async function getVideosBySection(categoryID) {
 }
 
 export async function getVideosByTopic(topicID) {
-  console.log(topicID)
   const videos = await fetchAPI(`/videos?filter[field_topic.id]=${topicID}`)
 
   return videos
